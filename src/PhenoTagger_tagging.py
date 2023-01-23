@@ -88,13 +88,13 @@ def phenotagger_tag(infolder,para_set,outfolder):
                     'charfile':'../dict/char.vocab',
                     'labelfile':'../dict/lable.vocab',
                     'posfile':'../dict/pos.vocab'}
-        modelfile='../models/cnn_hpo.h5'
+        modelfile='../models/cnn_mp.h5'#'../models/cnn_hpo.h5'
     else:
         vocabfiles={'labelfile':'../dict/lable.vocab',
                     'config_path':'../models/biobert_v11_pubmed/bert_config.json',
                     'checkpoint_path':'../models/biobert_v11_pubmed/model.ckpt-1000000',
                     'vocab_path':'../models/biobert_v11_pubmed/vocab.txt'}
-        modelfile='../models/biobert_hpo.h5'
+        modelfile='../models/biobert_mp.h5'#'../models/biobert_hpo.h5'
     
     # loading dict and model
         

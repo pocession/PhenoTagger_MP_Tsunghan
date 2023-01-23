@@ -37,15 +37,20 @@ or TF1:
 To create the python environment:
 ```
 python3.7.12 -m venv phenotagger_venv
+OR
+conda create -n phenotagger_venv python=3.7
 ```
 
 To start the python environment:
 ```
 source phenotagger_venv/bin/activate
+OR
+conda activate phenotagger_venv
 ```
 
 
 To install all dependencies automatically, use the bash commands:
+Note: When using anaconda/miniconda, use 'python instead of 'python3' inside an anaconda prompt.
 
 ```
 cd PhenoTagger_MP
@@ -89,6 +94,8 @@ Example:
 
 ```
 python3 PhenoTagger_tagging.py -i ../tagging_data/input/ -o ../tagging_data/output/
+OR
+python PhenoTagger_tagging.py -i ../../P0012.DARTpaths/data-raw/ECHA/Raw/ -o ../../P0012.DARTpaths/data-raw/ECHA/PhenoTagger_out/
 ```
 
 
