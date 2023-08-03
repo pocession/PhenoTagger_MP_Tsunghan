@@ -73,7 +73,7 @@ bash get_files.sh
 Command to format annotations:
 ```
 cd src
-python3 format_annotations("../data/MP_annotations/echa_pubmed_mp_annot.tsv")
+python3 format_annotations.py
 ```
 
 ## Tagging free text with PhenoTagger
